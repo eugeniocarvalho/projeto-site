@@ -8,22 +8,14 @@ body {
 }
 
 main {
-  width: 70%;
+  width: 90vw;
+  height: 100%;
   background: white;
+  max-height: fit-content;
   margin: auto;
   padding: 0,625rem;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.473);
   border-radius: 10px;
-
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 2rem;
-  bottom: 10;
-  
-  
-  max-height: auto;
 } 
 
 main header h1 {
@@ -42,26 +34,61 @@ article h2 {
   height: auto;
 }
 
-article p {
-  margin: 0.7rem;
-  text-align: center;
+.button-course{
+  font-size: 15px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  width: 50%;
+  height: 40px;
+  text-decoration: none;
+  border: yellow 0.3rem solid;
+  background-color: yellow;
+
+  border-radius: 50px;
+}
+
+#logo {
+  height: auto;
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+
+#img-course {
+  display: flex;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+}
+
+a #back-button {
+  margin: 10px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+}
+
+iframe {
+  margin: auto;
+  display: flex;
+
+  width: 70%;
+  height: auto;
 }
 
 @media (min-width: 465px) {
   main {
     width: 70%;
+    height:70%;
     background: white;
     max-height: fit-content;
     margin: auto;
-    padding: 0,625rem;
+    padding: 1rem;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.473);
     border-radius: 10px;
-
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 40px;
-    bottom: 0;
 } 
   
   main header h1 {
@@ -83,5 +110,56 @@ article p {
   article p {
     margin: 0.7rem;
     text-align: center;
+    margin-bottom: 46px;
+  }
+
+  #logo {
+    height: auto;
+    width: 40%;
+    margin: auto;
+    display: flex;
+  }
+
+  .button-course{
+    font-size: 15px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  
+    width: 180px;
+    text-decoration: none;
+    border: yellow 0.3rem solid;
+    background-color: yellow;
+  
+    border-radius: 50px;
+    transition: .2s;
+  }
+  .button-course:hover {
+    text-decoration: none;
+    color: black;
+    background: transparent;
+  }
+
+  #img-course {
+    display: flex;
+    margin: auto;
+    width: auto;
+    height: auto;
+  }
+
+  a #back-button {
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    display: flex;
+  }
+
+  iframe {
+    margin: auto;
+    display: flex;
+    
+    width: 70%;
+    height: 70vh;
   }
 }
