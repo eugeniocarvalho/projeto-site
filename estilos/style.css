@@ -74,12 +74,11 @@ a #back-button {
 iframe {
   margin: auto;
   display: flex;
-
-  width: 70%;
-  height: auto;
+  width: 80%;
+  height: 30vh;
 }
 
-@media (min-width: 465px) {
+@media (min-width: 850px) {
   main {
     width: 70%;
     height:70%;
@@ -159,7 +158,7 @@ iframe {
     margin: auto;
     display: flex;
     
-    width: 70%;
-    height: 70vh;
+    width: 30vw;
+    height: 35vh;
   }
 }
